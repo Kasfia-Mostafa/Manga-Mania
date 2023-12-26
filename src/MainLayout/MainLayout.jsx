@@ -3,7 +3,7 @@ import Navbar from "../Pages/HomePage/Navbar/Navbar";
 
 const MainLayout = () => {
   return (
-    <div className="max-w-7xl mx-auto">
+    <div className="px-10">
       <Navbar></Navbar>
     <Outlet></Outlet>
     </div>
