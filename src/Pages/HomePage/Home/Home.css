@@ -1,0 +1,95 @@
+.centerbar {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  z-index: 2;
+}
+
+.centerbar-item:nth-child(1) {
+  background: #13c1d4;
+  font-family: "Carbon Bold";
+  text-transform: uppercase;
+  width: 240px;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  left: -100px;
+}
+
+.centerbar-item:nth-child(2) {
+  transform: rotate(-90deg);
+  position: relative;
+  top: -150px;
+  left: 100px;
+  font-family: "Neue Montreal";
+  text-transform: uppercase;
+}
+
+.bottombar {
+  position: absolute;
+  bottom: 0;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.year {
+  font-style: italic;
+}
+
+.header {
+  position: absolute;
+  right: 90px;
+  bottom: -200px;
+  z-index: 2;
+}
+
+.header-container {
+  display: flex;
+}
+
+.header-item {
+  font-family: "Neue Montreal";
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+  font-size: 580px;
+}
+
+.img-one {
+  position: absolute;
+  top: 20;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 340px;
+  background: url("../../../assets/uchiha-itachi-moon-silhouette-anbu-wallpaper-preview.jpg") no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.img-two {
+  position: absolute;
+  top: 25%;
+  right: 0%;
+  width: 550px;
+  height: 350px;
+  background: url("../../../assets/kimetsu-no-yaiba-anime-anime-boys-tanjiro-kamado-kamado-tanjirō-hd-wallpaper-preview.jpg") no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.img-three {
+  position: absolute;
+  left: 67%;
+  bottom: 0%;
+  transform: translateX(-50%);
+  z-index: 2;
+  width: 180px;
+  height: 200px;
+  background: url("../../../assets/anime-attack-on-titan-attack-on-titan-levi-ackerman-shingeki-no-kyojin-hd-wallpaper-preview.jpg") no-repeat 50% 50%;
+  background-size: cover;
+}

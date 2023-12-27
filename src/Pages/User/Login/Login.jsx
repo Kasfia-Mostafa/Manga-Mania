@@ -1,7 +1,40 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './login.css';
+import { useContext, useState } from 'react';
+import { AuthContext } from '../../../Component/AuthProvider/AuthProvider';
+import Swal from 'sweetalert2';
 
 const Login = () => {
+  const [error, setError] = useState("");
+  const { signIn } = useContext(AuthContext);
+    const navigate = useNavigate();
+
+  const handleLogin = (event) => {
+    event.preventDefault();
+      const form = event.target;
+      const email = form.email.value;
+      const password = form.password.value;
+      if ((email, password)) {
+        signIn(email, password)
+          .then((result) => {
+            Swal.fire({
+              position: "top-center",
+              icon: "success",
+              title: "Login successfully",
+              showConfirmButton: false,
+              timer: 1500,
+            });
+            navigate("/");
+          })
+          .catch((error) => {
+            setError(error.massage);
+          });
+      }
+    
+    };
+  
+
+
   return (
     <div className='flex justify-center items-center h-[100vh]'>
       <div className='grid grid-flow-col gap-20 '>
@@ -9,7 +42,7 @@ const Login = () => {
         <img className='h-80 w-fit rounded-bl-full'  src="https://i.ibb.co/ng6HcYM/one-piece-anime.jpg" alt="" />
       </div>
       <div>
-      <form className='form'>
+      <form onSubmit={handleLogin} className='form'>
   <div className="title">Welcome,<br /><span>sign up to continue</span></div>
   <input className="input" name="email" placeholder="Email" type="email" />
   <input className="input" name="password" placeholder="Password" type="password" />

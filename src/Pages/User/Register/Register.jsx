@@ -4,6 +4,14 @@ import './Register.css'
 const image_hosting_key = import.meta.env.VITE_IMAGE_HOSTING_KEY;
 const image_hosting_api = `https://api.imgbb.com/1/upload?key=${image_hosting_key}`;
 
+const handleSubmit = (event) => {
+  event.preventDefault();
+    const form = event.target;
+    const name = form.name.value;
+    const photo = form.photo.value;
+    const email = form.email.value;
+    const password = form.password.value;
+}
 
 const Register = () => {
   return (
@@ -13,15 +21,12 @@ const Register = () => {
         <img className='h-80 w-fit rounded-bl-full'  src="https://i.ibb.co/ng6HcYM/one-piece-anime.jpg" alt="" />
       </div>
       <div className="">
-      <form className='form h-3/4'>
+      <form onSubmit={handleSubmit} className='form h-3/4'>
   <div className="title">Welcome,<br /><span>sign up to continue</span></div>
   <input className="input" name="name" placeholder="Full Name" type="text" />
   <input className="input" name="email" placeholder="Email" type="email" />
   <input className="input" name="password" placeholder="Password" type="password" />
-  <input className="input" name="password" placeholder="Password" type="password" />
-  <button>
-  <span className="button_top">Add Photo</span>
-</button>
+  <input className="input" name="photo" placeholder="file" type="file" />
   <div className="login-with">
     <div className="button-log"><b>G</b></div>
     <div className="button-log"><b>t</b></div>
