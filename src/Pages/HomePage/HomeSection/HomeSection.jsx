@@ -1,8 +1,8 @@
 import "./Home.css";
 
-const Home = () => {
+const HomeSection = () => {
   return (
-    <div>
+    <div className="" >
       <div className="container">
         <div className="centerbar">
           <div className="block-1 centerbar-item">
@@ -17,9 +17,9 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="header">
+        <div className="header ">
           <div className="header-container">
-            <div className="header-item">M</div>
+            <div className="header-item ">M</div>
             <div className="header-item">M</div>
           </div>
         </div>
@@ -36,4 +36,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomeSection;

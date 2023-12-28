@@ -1,3 +1,4 @@
+
 .centerbar {
   position: absolute;
   top: 60%;
@@ -56,7 +57,7 @@
 
 .header-item {
   font-family: "Neue Montreal";
-  color: rgb(0, 0, 0);
+  color: rgb(5, 0, 21);
   font-weight: bolder;
   font-size: 580px;
 }

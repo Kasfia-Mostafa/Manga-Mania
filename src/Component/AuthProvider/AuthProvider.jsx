@@ -1,11 +1,11 @@
 import { createContext, useEffect, useState } from "react";
 import {
-  // GoogleAuthProvider,
+  GoogleAuthProvider,
   createUserWithEmailAndPassword,
   getAuth,
   onAuthStateChanged,
   signInWithEmailAndPassword,
-  // signInWithPopup,
+  signInWithPopup,
   signOut,
   updateProfile,
 } from "firebase/auth";
@@ -19,7 +19,7 @@ const auth = getAuth(app);
 const AuthProviders = ({ children }) => {
   const [user, setUser] = useState(null);
   // const [loading, setLoading] = useState(true);
-  // const googleProvider = new GoogleAuthProvider();
+  const googleProvider = new GoogleAuthProvider();
   const axiosPublic = useAxiosPublic();
 
   const createUser = (email, password) => {
@@ -33,11 +33,11 @@ const AuthProviders = ({ children }) => {
   };
 
 
-  // google sign up or sign in
-  // const googleSignIn = () => {
-  //   // setLoading(true);
-  //   return signInWithPopup(auth, googleProvider);
-  // };
+  //google sign up or sign in
+  const googleSignIn = () => {
+    // setLoading(true);
+    return signInWithPopup(auth, googleProvider);
+  };
 
   const logOut = () => {
     // setLoading(true);
@@ -81,7 +81,7 @@ const AuthProviders = ({ children }) => {
     signIn,
     logOut,
     updateUserProfile,
-    // googleSignIn,
+    googleSignIn,
   };
 
   return (

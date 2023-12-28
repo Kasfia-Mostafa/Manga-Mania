@@ -5,7 +5,7 @@ import { AuthContext } from "../../../Component/AuthProvider/AuthProvider";
 const Navbar = () => {
 
   const { user, logOut } = useContext(AuthContext);
-  // const [error, setError] = useState("");
+  const [error, setError] = useState("");
   // console.log(user)
   const navigate = useNavigate();
 
@@ -18,8 +18,8 @@ const Navbar = () => {
             isPending
               ? "pending"
               : isActive
-              ? "text-[#275b76] text-lg font-DM"
-              : "text-[#529AC0] text-lg font-DM"
+              ? "text-[#275b76] text-lg font-DM mt-2"
+              : "text-[#529AC0] text-lg font-DM mt-2"
           }
         >
           Home
@@ -32,8 +32,8 @@ const Navbar = () => {
             isPending
               ? "pending"
               : isActive
-              ? "text-[#275b76] text-lg font-DM"
-              : "text-[#529AC0] text-lg font-DM"
+              ? "text-[#275b76] text-lg font-DM mt-2"
+              : "text-[#529AC0] text-lg font-DM mt-2"
           }
         >
          Manga
@@ -46,8 +46,8 @@ const Navbar = () => {
             isPending
               ? "pending"
               : isActive
-              ? "text-[#275b76] text-lg font-DM"
-              : "text-[#529AC0] text-lg font-DM"
+              ? "text-[#275b76] text-lg font-DM mt-2"
+              : "text-[#529AC0] text-lg font-DM mt-2"
           }
         >
         Dashboard
@@ -61,7 +61,7 @@ const Navbar = () => {
         navigate("/");
       })
       .catch((error) => {
-        // setError(error.massage);
+        setError(error.massage);
       });
   };
 
@@ -74,7 +74,7 @@ const Navbar = () => {
   // update state on toggle
   const handleToggle = (e) => {
     if (e.target.checked) {
-      setTheme("dark");
+      setTheme("black");
     } else {
       setTheme("light");
     }
@@ -128,11 +128,15 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             {navOptions}
-            <li>
-            <div className="navbar-end">
+          </ul>
+        </div>
+        
+        <div className="navbar-end">
+          <div>
+          <div className="navbar">
           <div className="dropdown dropdown-end">
             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-              <div className="w-10 rounded-full">
+              <div className="w-8 rounded-full">
                 {
                   user ? <img
                   alt=""
@@ -147,24 +151,22 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu  menu-sm dropdown-content mt-3 z-[5] p-2 shadow bg-base-200 rounded-2xl w-52"
             >
               <li>
-                <a>Profile</a>
+                <a className="rounded-xl">Profile</a>
               </li>
-              <li>
-                <a>Settings</a>
-              </li>
+              
               {user ? (
                 <li>
-                  <a onClick={handleSignOut} className="text-black">
+                  <a onClick={handleSignOut}>
                     Log Out
                   </a>
                 </li>
               ) : (
                 <Link to="/login">
                   <li>
-                    <a className="text-black">Login</a>
+                    <p className="rounded-xl">Login</p>
                   </li>
                 </Link>
               )}
@@ -172,10 +174,7 @@ const Navbar = () => {
           </div>
         
         </div>
-            </li>
-          </ul>
-        </div>
-        <div className="navbar-end">
+          </div>
           <div className="flex-none">
             {/* Toggle button here */}
             <button className="btn btn-square btn-ghost">
