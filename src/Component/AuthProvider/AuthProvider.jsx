@@ -18,29 +18,29 @@ const auth = getAuth(app);
 
 const AuthProviders = ({ children }) => {
   const [user, setUser] = useState(null);
-  // const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
   const googleProvider = new GoogleAuthProvider();
   const axiosPublic = useAxiosPublic();
 
   const createUser = (email, password) => {
-    // setLoading(true);
+    setLoading(true);
     return createUserWithEmailAndPassword(auth, email, password);
   };
 
   const signIn = (email, password) => {
-    // setLoading(true);
+    setLoading(true);
     return signInWithEmailAndPassword(auth, email, password);
   };
 
 
   //google sign up or sign in
   const googleSignIn = () => {
-    // setLoading(true);
+    setLoading(true);
     return signInWithPopup(auth, googleProvider);
   };
 
   const logOut = () => {
-    // setLoading(true);
+    setLoading(true);
     return signOut(auth);
   };
 
@@ -60,13 +60,13 @@ const AuthProviders = ({ children }) => {
         axiosPublic.post("/jwt", userInfo).then((res) => {
           if (res.data.token) {
             localStorage.setItem("access-token", res.data.token);
-            // setLoading(false);
+            setLoading(false);
           }
         });
       } else {
         // remove token
         localStorage.removeItem("access-token");
-        // setLoading(false);
+        setLoading(false);
       }
     });
     return () => {
@@ -76,7 +76,7 @@ const AuthProviders = ({ children }) => {
 
   const authInfo = {
     user,
-    // loading,
+    loading,
     createUser,
     signIn,
     logOut,
