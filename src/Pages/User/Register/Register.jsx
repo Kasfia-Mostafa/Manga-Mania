@@ -1,4 +1,5 @@
 import "./Register.css";
+import { imgbbUploader } from "imgbb-uploader";
 import { Link, useNavigate } from "react-router-dom";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../../Component/AuthProvider/AuthProvider";
@@ -9,12 +10,22 @@ import Swal from "sweetalert2";
 // const image_hosting_api = `https://api.imgbb.com/1/upload?key=${image_hosting_key}`;
 
 const Register = () => {
-  const { createUser, googleSignIn, updateUserProfile, reset } = useContext(AuthContext);
+  const { createUser, googleSignIn, updateUserProfile, reset } =
+    useContext(AuthContext);
+    const [photo, setPhoto] = useState([])
   const navigate = useNavigate();
   const axiosPublic = useAxiosPublic();
   const [error, setError] = useState("");
 
   const handleSubmit = (event) => {
+
+      imgbbUploader({
+        apiKey:"const image_hosting_api",
+        imageUrl:"https://akashmittal.com/wp-content/uploads/2020/10/site-logo-small.png"
+      })
+        .then((response) => setPhoto(response))
+        .catch((error) => setData(error));
+    }
     event.preventDefault();
     const form = event.target;
     const name = form.name.value;
@@ -22,45 +33,50 @@ const Register = () => {
     const email = form.email.value;
     const password = form.password.value;
 
-  //   createUser(email, password).then((result) => {
-  //     const loggedUser = result.user;
-  //     console.log(loggedUser);
-  //     updateUserProfile(name, photo)
-  //       .then(() => {
-  //         const userInfo = {
-  //           name: name,
-  //           email: email,
-  //         };
-  //         axiosPublic.post("/users", userInfo).then((res) => {
-  //           if (res.data.insertedId) {
-  //             console.log("user added to database");
-  //             reset();
-  //             Swal.fire({
-  //               position: "top-end",
-  //               icon: "success",
-  //               title: "User successfully",
-  //               showConfirmButton: false,
-  //               timer: 1500,
-  //             });
-  //             navigate("/");
-  //           }
-  //         });
-  //       })
-  //       .catch((error) => console.log(error));
-  //   });
+
+  
+
+    createUser(email, password).then((result) => {
+      const loggedUser = result.user;
+      console.log(loggedUser);
+      updateUserProfile(name, photo)
+        .then(() => {
+          const userInfo = {
+            name: name,
+            email: email,
+            photo: photo,
+          };
+          axiosPublic.post("/users", userInfo).then((res) => {
+            if (res.data.insertedId) {
+              console.log("user added to database");
+              reset();
+              Swal.fire({
+                position: "top-end",
+                icon: "success",
+                title: "User successfully register",
+                showConfirmButton: false,
+                timer: 1500,
+              });
+              navigate("/");
+            }
+          });
+        })
+        .catch((error) => console.log(error));
+    });
   };
 
   const handleGoogleRegister = () => {
     googleSignIn().then((result) => {
       console.log(result.user);
-      // const userInfo = {
-      //   email: result.user?.email,
-      //   name: result.user?.displayName,
-      // };
-      // axiosPublic.post("/users", userInfo).then((res) => {
-      //   console.log(res.data);
-      //   navigate("/");
-      // });
+      const userInfo = {
+        email: result.user?.email,
+        name: result.user?.displayName,
+        photo: result.user?.photoURL,
+      };
+      axiosPublic.post("/users", userInfo).then((res) => {
+        console.log(res.data);
+        navigate("/");
+      });
     });
   };
 
