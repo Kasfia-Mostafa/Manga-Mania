@@ -1,0 +1,452 @@
+[
+  {
+    "mangaName": "One Piece",
+    "quantity": 10,
+    "price": 12.99,
+    "rating": 4.8,
+    "plot": "Follow the adventures of Monkey D. Luffy and his crew as they search for the ultimate treasure, the One Piece, in a world of pirates.",
+    "genre": "Adventure, Action, Comedy, Fantasy",
+    "image": "https://i.ibb.co/ZLTwGh0/OP.jpg"
+  },
+  {
+    "mangaName": "Hunter x Hunter",
+    "quantity": 9,
+    "price": 13.99,
+    "rating": 4.8,
+    "plot": "Gon Freecss aspires to become a Hunter like his father and embarks on a dangerous journey to pass the Hunter Examination.",
+    "genre": "Adventure, Action, Fantasy",
+    "image": "https://i.ibb.co/5h8mMfH/hxh.jpg"
+  },
+  {
+    "mangaName": "Attack on Titan",
+    "quantity": 6,
+    "price": 14.99,
+    "rating": 4.9,
+    "plot": "Humanity fights for survival against gigantic humanoid creatures known as Titans, as Eren Yeager seeks revenge for his mother's death.",
+    "genre": "Adventure, Action, Dark Fantasy",
+    "image": "https://i.ibb.co/K62yVKG/Attack-on-Titan.jpg"
+  },
+  {
+    "mangaName": "Fullmetal Alchemist",
+    "quantity": 6,
+    "price": 10.99,
+    "rating": 4.9,
+    "plot": "Follow the Elric brothers, Edward and Alphonse, on their journey to find the Philosopher's Stone to restore their bodies after a failed alchemical experiment.",
+    "genre": "Adventure, Action, Fantasy",
+    "image": "https://i.ibb.co/mH94H6c/FMA.jpg"
+  },
+  {
+    "mangaName": "Magi: The Labyrinth of Magic",
+    "quantity": 7,
+    "price": 11.75,
+    "rating": 4.7,
+    "plot": "Aladdin explores mysterious dungeons and encounters powerful beings in a world of magic and adventure.",
+    "genre": "Adventure, Fantasy, Magic",
+    "image": "https://i.ibb.co/kSzjfZD/Magi.jpg"
+  },
+  {
+    "mangaName": "The Seven Deadly Sins",
+    "quantity": 8,
+    "price": 12.49,
+    "rating": 4.6,
+    "plot": "A group of powerful knights known as the Seven Deadly Sins reunites to save the kingdom from tyranny.",
+    "genre": "Adventure, Fantasy, Action",
+    "image": "https://i.ibb.co/smCtN30/7deadly.jpg"
+  },
+  {
+    "mangaName": "Made in Abyss",
+    "quantity": 5,
+    "price": 13.49,
+    "rating": 4.8,
+    "plot": "Riko ventures into the enigmatic Abyss to find her missing mother, encountering mysterious creatures and uncovering dark secrets.",
+    "genre": "Adventure, Fantasy, Mystery",
+    "image": "https://i.ibb.co/Wz3ryxY/MIA.jpg"
+  },
+  {
+    "mangaName": "Black Clover",
+    "quantity": 7,
+    "price": 11.99,
+    "rating": 4.5,
+    "plot": "Asta dreams of becoming the Wizard King and overcomes his lack of magical ability through determination and hard work.",
+    "genre": "Adventure, Fantasy, Magic",
+    "image": "https://i.ibb.co/jz6QQKR/Black.jpg"
+  },
+  {
+    "mangaName": "Dr. Stone",
+    "quantity": 8,
+    "price": 10.99,
+    "rating": 4.7,
+    "plot": "Senku revives humanity from petrification and uses science to rebuild civilization in a world where technology is lost.",
+    "genre": "Adventure, Sci-Fi",
+    "image": "https://i.ibb.co/w7chTQ7/Dr.jpg"
+  },
+  {
+    "mangaName": "The Rising of the Shield Hero",
+    "quantity": 6,
+    "price": 14.25,
+    "rating": 4.6,
+    "plot": "Naofumi rises as the Shield Hero, seeking vengeance and redemption in a world threatened by waves of calamity.",
+    "genre": "Adventure, Fantasy",
+    "image": "https://i.ibb.co/0BDYh1C/shield-hero-season.jpg"
+  },
+  {
+    "mangaName": "Kimi ni Todoke: From Me to You",
+    "quantity": 8,
+    "price": 11.99,
+    "rating": 4.7,
+    "plot": "Sawako Kuronuma navigates high school life and experiences love with the popular Shota Kazehaya.",
+    "genre": "Romance, School, Shoujo",
+    "image": "https://i.ibb.co/BrT88Mr/Kimi.jpg"
+  },
+  {
+    "mangaName": "Ao Haru Ride",
+    "quantity": 6,
+    "price": 10.75,
+    "rating": 4.6,
+    "plot": "Futaba Yoshioka reinvents herself in high school and meets her first love Kou Mabuchi again, but their relationship faces challenges from their past.",
+    "genre": "Romance, School, Shoujo",
+    "image": "https://i.ibb.co/jJ6CkzJ/AHR.jpg"
+  },
+  {
+    "mangaName": "Toradora!",
+    "quantity": 7,
+    "price": 12.49,
+    "rating": 4.8,
+    "plot": "Ryuuji Takasu and Taiga Aisaka form an unlikely alliance to help each other win the affections of their crushes.",
+    "genre": "Romance, Comedy, School",
+    "image": "https://i.ibb.co/ZXm25qB/Toradora.jpg"
+  },
+  {
+    "mangaName": "Your Lie in April",
+    "quantity": 5,
+    "price": 13.99,
+    "rating": 4.9,
+    "plot": "Kousei Arima, a pianist who lost the ability to hear his own music after his mother's death, finds inspiration again through a free-spirited violinist, Kaori Miyazono.",
+    "genre": "Romance, Drama, Music",
+    "image": "https://i.ibb.co/gJGgVK2/April.jpg"
+  },
+  {
+    "mangaName": "Say I Love You",
+    "quantity": 6,
+    "price": 10.49,
+    "rating": 4.6,
+    "plot": "Mei Tachibana, a reserved high school student who doesn't believe in love, encounters Yamato Kurosawa, a popular boy, leading to a transformative relationship.",
+    "genre": "Romance, School, Shoujo",
+    "image": "https://i.ibb.co/SvCqYjM/Say-I-Love-You.jpg"
+  },
+  {
+    "mangaName": "My Little Monster",
+    "quantity": 7,
+    "price": 11.75,
+    "rating": 4.7,
+    "plot": "Shizuku Mizutani, focused on academics, crosses paths with Haru Yoshida, a troublemaker, and their unexpected connection leads to a rollercoaster of emotions.",
+    "genre": "Romance, Comedy, School",
+    "image": "https://i.ibb.co/MnS0ybQ/My-Little-Monster.jpg"
+  },
+  {
+    "mangaName": "Nisekoi: False Love",
+    "quantity": 8,
+    "price": 12.99,
+    "rating": 4.8,
+    "plot": "Raku Ichijou and Chitoge Kirisaki pretend to date to ease tensions between their families but develop genuine feelings.",
+    "genre": "Romance, Comedy, Harem",
+    "image": "https://i.ibb.co/SR0XJLf/Nisekoi.jpg"
+  },
+  {
+    "mangaName": "Golden Time",
+    "quantity": 5,
+    "price": 13.49,
+    "rating": 4.6,
+    "plot": "Banri Tada, suffering from amnesia, begins a new life in college where he meets the spirited Kouko Kaga, leading to a heartfelt and complex romantic story.",
+    "genre": "Romance, Comedy, Drama",
+    "image": "https://i.ibb.co/wStFmQK/Golden-Time.jpg"
+  },
+  {
+    "mangaName": "Bokura ga Ita: We Were There",
+    "quantity": 4,
+    "price": 14.99,
+    "rating": 4.5,
+    "plot": "Nanami Takahashi falls in love with Motoharu Yano, who is still haunted by the memory of his deceased ex-girlfriend, creating a bittersweet love story.",
+    "genre": "Romance, Drama, Shoujo",
+    "image": "https://i.ibb.co/MBs5Qbb/Bokura-ga-Ita.jpg"
+  },
+  {
+    "mangaName": "Lovely★Complex",
+    "quantity": 9,
+    "price": 9.99,
+    "rating": 4.5,
+    "plot": "Risa Koizumi and Atsushi Otani, unusually tall and short respectively, form an entertaining duo as they navigate their feelings for each other.",
+    "genre": "Romance, Comedy, School",
+    "image": "https://i.ibb.co/FYpnGDX/Lovely-Complex.jpg"
+  },
+  {
+    "mangaName": "Death Note",
+    "quantity": 10,
+    "price": 11.49,
+    "rating": 4.7,
+    "plot": "Light Yagami discovers a mysterious notebook that allows him to kill anyone whose name he writes in it, leading to a deadly game of cat and mouse with a brilliant detective known as L.",
+    "genre": "Thriller, Mystery, Psychological, Supernatural",
+    "image": "https://i.ibb.co/ZW3rFtm/Death-Note.jpg"
+  },
+  {
+    "mangaName": "Monster",
+    "quantity": 8,
+    "price": 12.99,
+    "rating": 4.9,
+    "plot": "Dr. Kenzou Tenma encounters a young boy he saved who turns out to be a serial killer, setting off a chain of events that lead to a hunt for a dangerous psychopath.",
+    "genre": "Thriller, Mystery, Psychological, Seinen",
+    "image": "https://i.ibb.co/Xy6M2sm/Monster.jpg"
+  },
+  {
+    "mangaName": "Tokyo Ghoul",
+    "quantity": 7,
+    "price": 14.99,
+    "rating": 4.5,
+    "plot": "Ken Kaneki, a college student, becomes a half-ghoul after a chance encounter, forcing him to navigate between the human and ghoul worlds.",
+    "genre": "Thriller, Horror, Supernatural",
+    "image": "https://i.ibb.co/61pgWfj/Tokyo-Ghoul.jpg"
+  },
+  {
+    "mangaName": "Erased",
+    "quantity": 9,
+    "price": 13.25,
+    "rating": 4.8,
+    "plot": "Satoru Fujinuma possesses a unique ability to travel back in time moments before a life-threatening incident, allowing him to prevent tragedies.",
+    "genre": "Thriller, Mystery, Supernatural",
+    "image": "https://i.ibb.co/kJHHT9Y/Erased.jpg"
+  },
+  {
+    "mangaName": "The Promised Neverland",
+    "quantity": 6,
+    "price": 11.99,
+    "rating": 4.6,
+    "plot": "Emma and her friends uncover dark secrets about their orphanage, leading to a desperate escape plan from their sinister caretakers.",
+    "genre": "Thriller, Mystery, Horror",
+    "image": "https://i.ibb.co/qRL0kcB/The-Promised-Neverland.jpg"
+  },
+  {
+    "mangaName": "Parasyte",
+    "quantity": 8,
+    "price": 10.99,
+    "rating": 4.7,
+    "plot": "Shinichi Izumi battles against parasitic creatures that take over human bodies, forging an uneasy alliance with a parasite inhabiting his right hand.",
+    "genre": "Thriller, Horror, Sci-Fi",
+    "image": "https://i.ibb.co/6gJqL0P/Parasyte.jpg"
+  },
+  {
+    "mangaName": "Liar Game",
+    "quantity": 5,
+    "price": 13.49,
+    "rating": 4.8,
+    "plot": "Nao Kanzaki gets involved in a dangerous psychological game called the Liar Game, where deceit and manipulation determine the winners and losers.",
+    "genre": "Thriller, Psychological, Mystery",
+    "image": "https://i.ibb.co/4PfyMGk/Liar-Game.jpg"
+  },
+  {
+    "mangaName": "Another",
+    "quantity": 7,
+    "price": 12.75,
+    "rating": 4.6,
+    "plot": "Kouichi Sakakibara transfers to a new school and discovers a haunting secret tied to a series of mysterious deaths.",
+    "genre": "Thriller, Horror, Mystery",
+    "image": "https://i.ibb.co/dB77XbH/Another.jpg"
+  },
+  {
+    "mangaName": "Judge",
+    "quantity": 6,
+    "price": 14.25,
+    "rating": 4.7,
+    "plot": "Participants in a game called 'Judge' face life-or-death decisions that force them to confront their darkest secrets.",
+    "genre": "Thriller, Mystery, Psychological",
+    "image": "https://i.ibb.co/FWSWRJk/Judge.jpg"
+  },
+  {
+    "mangaName": "Ajin: Demi-Human",
+    "quantity": 10,
+    "price": 9.99,
+    "rating": 4.5,
+    "plot": "Kei Nagai discovers he is an immortal Ajin, hunted by the government and facing moral dilemmas as he fights for survival.",
+    "genre": "Thriller, Supernatural, Horror",
+    "image": "https://i.ibb.co/mS684wp/Ajin.jpg"
+  },
+  {
+    "mangaName": "March Comes in Like a Lion",
+    "quantity": 8,
+    "price": 11.99,
+    "rating": 4.7,
+    "plot": "Follow the life of professional shogi player Rei Kiriyama as he navigates personal struggles, relationships, and the intricacies of the shogi world.",
+    "genre": "Slice of Life, Drama, Seinen",
+    "image": "https://example.com/march_comes_in_like_a_lion.jpg"
+  },
+  {
+    "mangaName": "Barakamon",
+    "quantity": 6,
+    "price": 10.75,
+    "rating": 4.6,
+    "plot": "Calligrapher Seishuu Handa moves to a rural village to find inspiration and encounters unique individuals who shape his perspective on life.",
+    "genre": "Slice of Life, Comedy",
+    "image": "https://example.com/barakamon.jpg"
+  },
+  {
+    "mangaName": "Silver Spoon",
+    "quantity": 7,
+    "price": 12.49,
+    "rating": 4.8,
+    "plot": "Yuugo Hachiken enrolls in an agricultural school to escape family pressures and discovers a new world filled with challenges and life lessons.",
+    "genre": "Slice of Life, Comedy",
+    "image": "https://example.com/silver_spoon.jpg"
+  },
+  {
+    "mangaName": "Natsume's Book of Friends",
+    "quantity": 5,
+    "price": 13.99,
+    "rating": 4.9,
+    "plot": "Takashi Natsume returns spirits' names written in the Book of Friends by his grandmother, embarking on heartwarming encounters with spirits and humans alike.",
+    "genre": "Slice of Life, Supernatural, Shoujo",
+    "image": "https://example.com/natsumes_book_of_friends.jpg"
+  },
+  {
+    "mangaName": "Honey and Clover",
+    "quantity": 6,
+    "price": 10.49,
+    "rating": 4.6,
+    "plot": "A group of art students navigates through the complexities of love, friendship, and personal growth in their intertwining lives.",
+    "genre": "Slice of Life, Drama, Romance",
+    "image": "https://example.com/honey_and_clover.jpg"
+  },
+  {
+    "mangaName": "Sangatsu no Lion",
+    "quantity": 7,
+    "price": 11.75,
+    "rating": 4.7,
+    "plot": "Rei Kiriyama, a professional shogi player, faces personal challenges and finds solace through meaningful connections with others.",
+    "genre": "Slice of Life, Drama, Seinen",
+    "image": "https://example.com/sangatsu_no_lion.jpg"
+  },
+  {
+    "mangaName": "A Silent Voice",
+    "quantity": 8,
+    "price": 12.99,
+    "rating": 4.8,
+    "plot": "A former bully seeks redemption by reconnecting with the deaf girl he once tormented, leading to self-reflection and personal growth.",
+    "genre": "Slice of Life, Drama, Romance",
+    "image": "https://example.com/a_silent_voice.jpg"
+  },
+  {
+    "mangaName": "Usagi Drop",
+    "quantity": 5,
+    "price": 13.49,
+    "rating": 4.6,
+    "plot": "Daikichi Kawachi takes responsibility for his grandfather's illegitimate child, Rin, and embarks on an unconventional journey of parenthood.",
+    "genre": "Slice of Life, Drama",
+    "image": "https://example.com/usagi_drop.jpg"
+  },
+  {
+    "mangaName": "Flying Witch",
+    "quantity": 6,
+    "price": 14.25,
+    "rating": 4.7,
+    "plot": "Makoto moves to rural Aomori to complete her witch training, experiencing daily life with magic and encountering peculiar events.",
+    "genre": "Slice of Life, Comedy, Supernatural",
+    "image": "https://example.com/flying_witch.jpg"
+  },
+  {
+    "mangaName": "Yotsuba&!",
+    "quantity": 10,
+    "price": 9.99,
+    "rating": 4.5,
+    "plot": "Follow the daily adventures of Yotsuba Koiwai, an energetic and curious little girl discovering the world around her.",
+    "genre": "Slice of Life, Comedy",
+    "image": "https://example.com/yotsuba_and.jpg"
+  },
+  {
+    "mangaName": "Berserk",
+    "quantity": 9,
+    "price": 15.99,
+    "rating": 4.9,
+    "plot": "Follow the story of Guts, a lone mercenary with a dark and tragic past, as he battles against demonic forces in a medieval world.",
+    "genre": "Adventure, Action, Dark Fantasy",
+    "image": "https://example.com/berserk.jpg"
+  },
+  {
+    "mangaName": "Fairy Tail",
+    "quantity": 8,
+    "price": 12.49,
+    "rating": 4.7,
+    "plot": "Lucy Heartfilia joins the famous Fairy Tail guild, embarking on magical adventures with her new friends.",
+    "genre": "Adventure, Fantasy, Magic",
+    "image": "https://example.com/fairy_tail.jpg"
+  },
+  {
+    "mangaName": "Goblin Slayer",
+    "quantity": 7,
+    "price": 11.75,
+    "rating": 4.6,
+    "plot": "A young priestess teams up with a ruthless adventurer known as Goblin Slayer to eradicate goblins.",
+    "genre": "Adventure, Fantasy, Action",
+    "image": "https://example.com/goblin_slayer.jpg"
+  },
+  {
+    "mangaName": "Vinland Saga",
+    "quantity": 6,
+    "price": 13.99,
+    "rating": 4.8,
+    "plot": "Thorfinn seeks revenge against the man who killed his father in this Viking-era tale filled with action and historical elements.",
+    "genre": "Adventure, Action, Historical",
+    "image": "https://example.com/vinland_saga.jpg"
+  },
+  {
+    "mangaName": "Konosuba: God's Blessing on This Wonderful World!",
+    "quantity": 7,
+    "price": 10.99,
+    "rating": 4.7,
+    "plot": "Kazuma Sato finds himself in a fantasy world and forms a dysfunctional party to navigate comedic adventures.",
+    "genre": "Adventure, Comedy, Fantasy",
+    "image": "https://example.com/konosuba.jpg"
+  },
+  {
+    "mangaName": "Rurouni Kenshin: Meiji Swordsman Romantic Story",
+    "quantity": 8,
+    "price": 11.49,
+    "rating": 4.6,
+    "plot": "Former assassin Kenshin Himura seeks redemption in the Meiji era, vowing not to kill and protecting the innocent.",
+    "genre": "Adventure, Action, Historical",
+    "image": "https://example.com/rurouni_kenshin.jpg"
+  },
+  {
+    "mangaName": "Log Horizon",
+    "quantity": 6,
+    "price": 14.25,
+    "rating": 4.7,
+    "plot": "Players trapped in a MMORPG must adapt to their new reality, with strategist Shiroe leading the way.",
+    "genre": "Adventure, Fantasy, Game",
+    "image": "https://example.com/log_horizon.jpg"
+  },
+  {
+    "mangaName": "Kingdom",
+    "quantity": 5,
+    "price": 13.49,
+    "rating": 4.8,
+    "plot": "Shin and Ei Sei aim to become great generals in ancient China, fighting to unify the war-torn kingdom.",
+    "genre": "Adventure, Historical, Action",
+    "image": "https://example.com/kingdom.jpg"
+  },
+  {
+    "mangaName": "Astra Lost in Space",
+    "quantity": 9,
+    "price": 9.99,
+    "rating": 4.5,
+    "plot": "A group of students stranded in space work together to survive and uncover the mysteries of their predicament.",
+    "genre": "Adventure, Sci-Fi, Mystery",
+    "image": "https://example.com/astra_lost_in_space.jpg"
+  },
+  {
+    "mangaName": "Noragami: Stray God",
+    "quantity": 7,
+    "price": 12.99,
+    "rating": 4.6,
+    "plot": "Yato, a minor deity, dreams of fame and fortune as he takes odd jobs and battles evil spirits.",
+    "genre": "Adventure, Supernatural, Action",
+    "image": "https://example.com/noragami.jpg"
+  }
+]

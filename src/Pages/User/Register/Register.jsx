@@ -1,40 +1,25 @@
 import "./Register.css";
-import { imgbbUploader } from "imgbb-uploader";
 import { Link, useNavigate } from "react-router-dom";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../../Component/AuthProvider/AuthProvider";
 import useAxiosPublic from "../../../Hooks/Axios/useAxiosPublic";
 import Swal from "sweetalert2";
 
-// const image_hosting_key = import.meta.env.VITE_IMAGE_HOSTING_KEY;
-// const image_hosting_api = `https://api.imgbb.com/1/upload?key=${image_hosting_key}`;
-
 const Register = () => {
   const { createUser, googleSignIn, updateUserProfile, reset } =
     useContext(AuthContext);
-    const [photo, setPhoto] = useState([])
+
   const navigate = useNavigate();
   const axiosPublic = useAxiosPublic();
   const [error, setError] = useState("");
 
   const handleSubmit = (event) => {
-
-      imgbbUploader({
-        apiKey:"const image_hosting_api",
-        imageUrl:"https://akashmittal.com/wp-content/uploads/2020/10/site-logo-small.png"
-      })
-        .then((response) => setPhoto(response))
-        .catch((error) => setData(error));
-    }
     event.preventDefault();
     const form = event.target;
     const name = form.name.value;
     const photo = form.photo.value;
     const email = form.email.value;
     const password = form.password.value;
-
-
-  
 
     createUser(email, password).then((result) => {
       const loggedUser = result.user;
@@ -118,9 +103,10 @@ const Register = () => {
             <input
               className="input"
               name="photo"
-              placeholder="file"
-              type="file"
+              placeholder="Image"
+              type="text"
             />
+         
             <div className="login-with">
               <div onClick={handleGoogleRegister} className="button-log">
                 <b>G</b>
