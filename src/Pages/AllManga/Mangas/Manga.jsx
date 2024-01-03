@@ -2,7 +2,6 @@ import "../../../Component/Styles/Manga.css";
 
 const Manga = ({ manga }) => {
   const { mangaName, image, plot } = manga || [];
-  console.log(manga);
 
   return (
     <div>
