@@ -27,7 +27,7 @@ const Navbar = () => {
       </li>
       <li>
         <NavLink
-          to="/allProperties"
+          to="/allMangas"
           className={({ isActive, isPending }) =>
             isPending
               ? "pending"

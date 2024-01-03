@@ -3,6 +3,7 @@ import Login from "../../Pages/User/Login/Login";
 import MainLayout from "../../MainLayout/MainLayout";
 import Register from "../../Pages/User/Register/Register";
 import HomeSection from "../../Pages/HomePage/HomeSection/HomeSection";
+import Mangas from "../../Pages/AllManga/Mangas/Mangas";
 
 const router = createBrowserRouter([
   {
@@ -12,6 +13,10 @@ const router = createBrowserRouter([
     {
       path: "/",
       element: <HomeSection></HomeSection>
+    },
+    {
+      path: "/allMangas",
+      element: <Mangas></Mangas>
     },
     {
       path: "/login",
